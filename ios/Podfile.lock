@@ -1,0 +1,33 @@
+PODS:
+  - Flutter (1.0.0)
+  - geofencing_flutter_plugin (1.3.3):
+    - Flutter
+    - geofencing_flutter_plugin/default (= 1.3.3)
+    - WoosmapGeofencing (~> 4.0)
+  - geofencing_flutter_plugin/default (1.3.3):
+    - Flutter
+    - WoosmapGeofencing (~> 4.0)
+  - WoosmapGeofencing (4.3.7)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - geofencing_flutter_plugin (from `.symlinks/plugins/geofencing_flutter_plugin/ios`)
+
+SPEC REPOS:
+  trunk:
+    - WoosmapGeofencing
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  geofencing_flutter_plugin:
+    :path: ".symlinks/plugins/geofencing_flutter_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  geofencing_flutter_plugin: a955ff51264f8abd50c7052fc270cf4fe344467c
+  WoosmapGeofencing: 2b13b2ab5c7818b33b8dfdeb986f8768b4a06ddc
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2
