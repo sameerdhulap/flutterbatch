@@ -7,8 +7,8 @@ plugins {
 
 android {
     namespace = "com.marketingconnector.batchconnector"
-    compileSdk 34
-    ndkVersion = '21.4.7075529'
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -36,12 +36,6 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
         }
-    }
-    dependencies {
-        implementation "androidx.room:room-runtime:2.+"
-        implementation "com.batch.android:batch-sdk:2.+"
-        implementation "woosmap:geofencing-core-android-sdk:core_geofence_2.+"
-        implementation "com.webgeoservices.woosmapgeofencing:woosmap-mobile-sdk:4.+"
     }
 }
 
