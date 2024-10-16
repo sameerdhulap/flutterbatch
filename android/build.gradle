@@ -1,7 +1,14 @@
+ext {
+    minSdkVersion = 26
+    compileSdkVersion = 34
+    targetSdkVersion = 34
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
