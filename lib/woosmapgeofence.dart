@@ -8,11 +8,11 @@ class WoosmapGeofence {
 
   Future<void> initialize() async {
     try {
-      String woosmapKey = "157c16cd-fc0e-46d9-8c40-f80953a9cbf7";
+      String woosmapKey = "";
       if (Platform.isAndroid) {
-        woosmapKey = "157c16cd-fc0e-46d9-8c40-f80953a9cbf7";
+        woosmapKey = "<<Android Woosmap Private Key>>";
       } else {
-        woosmapKey = "653ce5d0-7019-48bc-a0d9-4353d5999a89";
+        woosmapKey = "<<iOS Woosmap Private key>>";
       }
       var status = await _geofencingFlutterPlugin.getPermissionsStatus();
       if (status == "UNKNOWN") {
