@@ -1,4 +1,4 @@
-package com.marketingconnector.batchconnector;
+package com.marketingconnector.blazeconnector;
 
 import android.app.Application;
 import android.content.IntentFilter;

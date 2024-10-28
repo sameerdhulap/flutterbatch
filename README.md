@@ -1,4 +1,4 @@
-# batchconnector
+# BrazeConnector
 
 A new Flutter project.
 

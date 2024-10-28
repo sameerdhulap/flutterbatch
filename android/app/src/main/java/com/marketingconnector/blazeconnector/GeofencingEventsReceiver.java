@@ -1,12 +1,10 @@
-package com.marketingconnector.batchconnector;
+package com.marketingconnector.blazeconnector;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.batch.android.Batch;
-import com.batch.android.BatchEventAttributes;
 import com.webgeoservices.woosmapgeofencingcore.database.POI;
 import com.webgeoservices.woosmapgeofencingcore.database.WoosmapDb;
 
@@ -31,10 +29,11 @@ public class GeofencingEventsReceiver extends BroadcastReceiver {
                 if (poi != null){ //poi could be null if the entered/exited region is a custom region.
 
                     // Event with custom attributes
-                    BatchEventAttributes attributes = new BatchEventAttributes()
-                            .put("identifier", poi.idStore)
-                            .put("name", poi.name);
-                    Batch.Profile.trackEvent(regionData.getString("eventname"), attributes);
+//                    Braze.logCustomEvent(regionData.getString("eventname"),
+//                        new BrazeProperties(new JSONObject()
+//                            .put("identifier", poi.idStore)
+//                            .put("name", poi.name)
+//                    ));
                 }
             }
             catch (Exception ex){
