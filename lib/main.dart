@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Woosmap Geofence and Batch Integration',
+              'Woosmap Geofence and Braze Integration',
             ),
           ],
         ),
