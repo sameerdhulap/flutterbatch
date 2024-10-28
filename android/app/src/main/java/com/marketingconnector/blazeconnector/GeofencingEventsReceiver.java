@@ -29,11 +29,11 @@ public class GeofencingEventsReceiver extends BroadcastReceiver {
                 if (poi != null){ //poi could be null if the entered/exited region is a custom region.
 
                     // Event with custom attributes
-//                    Braze.logCustomEvent(regionData.getString("eventname"),
-//                        new BrazeProperties(new JSONObject()
-//                            .put("identifier", poi.idStore)
-//                            .put("name", poi.name)
-//                    ));
+                    Braze.logCustomEvent(regionData.getString("eventname"),
+                        new BrazeProperties(new JSONObject()
+                            .put("identifier", poi.idStore)
+                            .put("name", poi.name)
+                    ));
                 }
             }
             catch (Exception ex){
