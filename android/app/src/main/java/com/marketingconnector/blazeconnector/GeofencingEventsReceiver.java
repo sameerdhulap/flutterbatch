@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import com.braze.Braze;
+import com.braze.models.outgoing.BrazeProperties;
 import com.webgeoservices.woosmapgeofencingcore.database.POI;
 import com.webgeoservices.woosmapgeofencingcore.database.WoosmapDb;
 
@@ -28,8 +30,8 @@ public class GeofencingEventsReceiver extends BroadcastReceiver {
                 poi = WoosmapDb.getInstance(context).getPOIsDAO().getPOIbyStoreId(regionData.getString("identifier"));
                 if (poi != null){ //poi could be null if the entered/exited region is a custom region.
 
-                    // Event with custom attributes
-                    Braze.logCustomEvent(regionData.getString("eventname"),
+                    // Event with custom attribute
+                    Braze.getInstance(context).logCustomEvent(regionData.getString("eventname"),
                         new BrazeProperties(new JSONObject()
                             .put("identifier", poi.idStore)
                             .put("name", poi.name)
