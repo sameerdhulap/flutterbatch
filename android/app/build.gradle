@@ -53,9 +53,6 @@ dependencies {
     implementation "androidx.room:room-runtime:2.+"
     implementation "com.github.woosmap:geofencing-core-android-sdk:core_geofence_2.+"
     implementation "com.webgeoservices.woosmapgeofencing:woosmap-mobile-sdk:4.+"
-    implementation "com.braze:android-sdk-ui:+"
-    implementation "com.braze:android-sdk-location:+"
-    implementation 'com.braze:android-sdk-base:32.1.0'
 }
 
 flutter {
